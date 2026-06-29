@@ -9,8 +9,8 @@
   <meta property="og:title" content="NEO FRONT — Design Inside Vibe Outside" />
   <meta property="og:description" content="Revêtement général, décoration, fourniture & pose à Sétif, Algérie." />
   <meta property="og:type" content="website" />
-  <meta name="theme-color" content="#d6a13a" />
-  <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="%230b0b0b"/><path d="M13 50V15l15 12v23h-7V30l-8-6v26z" fill="%23d6a13a"/><path d="M29 50V13l23 10-8 4-8-4v8h14l-7 6h-7v13z" fill="%23fff"/></svg>' />
+  <meta name="theme-color" content="#4a90e2" />
+  <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="%230b0b0b"/><path d="M13 50V15l15 12v23h-7V30l-8-6v26z" fill="%234a90e2"/><path d="M29 50V13l23 10-8 4-8-4v8h14l-7 6h-7v13z" fill="%23fff"/></svg>' />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
@@ -18,13 +18,13 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     :root{
-      --gold:#d6a13a;
-      --gold-2:#f0c76a;
+      --blue:#4a90e2;
+      --blue-2:#7fb8e6;
       --dark:#070707;
       --dark-2:#111214;
       --cream:#F9F5F0;
       --muted:#6b6b6b;
-      --border:rgba(214,161,58,.45);
+      --border:rgba(74,144,226,.45);
       --shadow:0 18px 55px rgba(0,0,0,.20);
     }
     *{box-sizing:border-box}
@@ -38,59 +38,59 @@
     }
     html[dir="rtl"] body{font-family:"Tajawal","Montserrat",sans-serif}
     .container-xl{max-width:1450px;margin:0 auto;padding:0 28px}
-    .gold{color:var(--gold)}
+    .blue{color:var(--blue)}
     .btn{
       display:inline-flex;align-items:center;justify-content:center;gap:.65rem;
       border-radius:6px;font-weight:800;text-transform:uppercase;letter-spacing:.02em;
       min-height:48px;padding:0 26px;transition:.25s ease;border:1px solid transparent;
       cursor:pointer;white-space:nowrap;
     }
-    .btn-gold{background:var(--gold);color:#fff;box-shadow:0 8px 20px rgba(214,161,58,.25)}
-    .btn-gold:hover{background:#c69028;transform:translateY(-2px)}
+    .btn-blue{background:var(--blue);color:#fff;box-shadow:0 8px 20px rgba(74,144,226,.25)}
+    .btn-blue:hover{background:#357abd;transform:translateY(-2px)}
     .btn-outline{border-color:rgba(255,255,255,.55);color:#fff;background:rgba(0,0,0,.25);backdrop-filter:blur(8px)}
-    .btn-outline:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-2px)}
-    .btn-light-outline{border-color:var(--gold);color:#b98217;background:#fff}
-    .btn-light-outline:hover{background:var(--gold);color:#fff}
+    .btn-outline:hover{border-color:var(--blue);color:var(--blue);transform:translateY(-2px)}
+    .btn-light-outline{border-color:var(--blue);color:#357abd;background:#fff}
+    .btn-light-outline:hover{background:var(--blue);color:#fff}
     .topbar{
       background:#020202;color:#fff;font-size:14px;height:45px;border-bottom:1px solid rgba(255,255,255,.08)
     }
     .topbar a{transition:.2s}
-    .topbar a:hover{color:var(--gold)}
-    .icon-gold{color:var(--gold)}
+    .topbar a:hover{color:var(--blue)}
+    .icon-blue{color:var(--blue)}
     .navbar{
       height:88px;background:rgba(7,7,7,.94);color:#fff;position:sticky;top:0;z-index:60;
       backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.06)
     }
-    .brand-logo svg{width:62px;height:62px;filter:drop-shadow(0 5px 14px rgba(214,161,58,.2))}
+    .brand-logo svg{width:62px;height:62px;filter:drop-shadow(0 5px 14px rgba(74,144,226,.2))}
     .brand-title{font-size:32px;font-weight:900;line-height:1}
-    .brand-title span:first-child{color:var(--gold)}
+    .brand-title span:first-child{color:var(--blue)}
     .brand-sub{font-size:13px;color:#fff;font-weight:600;margin-top:5px}
     .nav-link{
       position:relative;padding:34px 12px;font-weight:800;font-size:14px;text-transform:uppercase;transition:.2s;
     }
-    .nav-link:hover,.nav-link.active{color:var(--gold)}
+    .nav-link:hover,.nav-link.active{color:var(--blue)}
     .nav-link.active:after{
-      content:"";position:absolute;left:12px;right:12px;bottom:18px;height:2px;background:var(--gold)
+      content:"";position:absolute;left:12px;right:12px;bottom:18px;height:2px;background:var(--blue)
     }
     .dropdown-menu{
-      position:absolute;top:78px;left:0;background:#111;min-width:240px;border:1px solid rgba(214,161,58,.28);
+      position:absolute;top:78px;left:0;background:#111;min-width:240px;border:1px solid rgba(74,144,226,.28);
       box-shadow:var(--shadow);border-radius:10px;padding:10px;opacity:0;visibility:hidden;transform:translateY(10px);
       transition:.2s;z-index:80
     }
     .dropdown.open .dropdown-menu{opacity:1;visibility:visible;transform:translateY(0)}
     .dropdown-menu a{display:flex;align-items:center;gap:10px;padding:12px;border-radius:8px;color:#eee;font-size:13px;font-weight:700}
-    .dropdown-menu a:hover{background:rgba(214,161,58,.12);color:var(--gold)}
+    .dropdown-menu a:hover{background:rgba(74,144,226,.12);color:var(--blue)}
     .lang-box{border-left:1px solid rgba(255,255,255,.13);height:88px;padding-left:20px;position:relative}
     html[dir="rtl"] .lang-box{border-left:0;border-right:1px solid rgba(255,255,255,.13);padding-left:0;padding-right:20px}
     .lang-menu{
-      position:absolute;right:0;top:72px;background:#101010;border:1px solid rgba(214,161,58,.3);
+      position:absolute;right:0;top:72px;background:#101010;border:1px solid rgba(74,144,226,.3);
       border-radius:10px;min-width:120px;padding:7px;display:none
     }
     html[dir="rtl"] .lang-menu{right:auto;left:0}
     .lang-menu.open{display:block}
     .lang-menu button{display:block;width:100%;padding:9px 12px;text-align:left;border-radius:7px}
     html[dir="rtl"] .lang-menu button{text-align:right}
-    .lang-menu button:hover{background:rgba(214,161,58,.12);color:var(--gold)}
+    .lang-menu button:hover{background:rgba(74,144,226,.12);color:var(--blue)}
     .mobile-panel{
       display:none;position:fixed;inset:133px 0 auto 0;background:#090909;color:#fff;z-index:55;
       border-top:1px solid rgba(255,255,255,.08);box-shadow:0 18px 40px rgba(0,0,0,.35)
@@ -123,12 +123,12 @@
     }
     .slide img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
     .hero-content{position:relative;z-index:2;max-width:700px;padding-top:15px}
-    .hero-kicker{font-size:28px;letter-spacing:.34em;color:var(--gold);font-weight:800;margin-bottom:12px}
+    .hero-kicker{font-size:28px;letter-spacing:.34em;color:var(--blue);font-weight:800;margin-bottom:12px}
     .hero h1{font-size:68px;line-height:1.02;font-weight:900;letter-spacing:.01em;text-shadow:0 6px 18px rgba(0,0,0,.35)}
     .hero p{font-size:25px;line-height:1.45;margin:18px 0 26px;color:#f1f1f1}
     .hero-logo-card{
       position:absolute;z-index:2;right:9%;top:8%;width:360px;min-height:190px;
-      background:rgba(12,13,15,.78);border:2px solid rgba(214,161,58,.58);
+      background:rgba(12,13,15,.78);border:2px solid rgba(74,144,226,.58);
       box-shadow:0 0 0 1px rgba(255,255,255,.06),0 18px 50px rgba(0,0,0,.4);
       padding:24px;display:flex;align-items:center;justify-content:center;transform:perspective(900px) rotateY(-7deg)
     }
@@ -138,11 +138,11 @@
       position:absolute;top:50%;transform:translateY(-50%);z-index:5;width:48px;height:48px;border-radius:50%;
       background:rgba(0,0,0,.55);color:#fff;display:grid;place-items:center;font-size:30px;transition:.2s
     }
-    .hero-arrow:hover{background:var(--gold)}
+    .hero-arrow:hover{background:var(--blue)}
     .hero-arrow.prev{left:32px}.hero-arrow.next{right:32px}
     .hero-dots{position:absolute;z-index:5;bottom:78px;left:50%;transform:translateX(-50%);display:flex;gap:12px}
     .hero-dot{width:10px;height:10px;border-radius:50%;background:#ddd;opacity:.8;border:0}
-    .hero-dot.active{background:var(--gold);transform:scale(1.25)}
+    .hero-dot.active{background:var(--blue);transform:scale(1.25)}
     .quick-actions{
       position:fixed;right:0;top:235px;z-index:70;display:flex;flex-direction:column;gap:8px
     }
@@ -152,7 +152,7 @@
       gap:8px;font-size:12px;font-weight:800;border-radius:12px 0 0 12px;box-shadow:0 8px 25px rgba(0,0,0,.28)
     }
     html[dir="rtl"] .quick-actions a{border-radius:0 12px 12px 0}
-    .quick-actions a:first-child{background:var(--gold)}
+    .quick-actions a:first-child{background:var(--blue)}
     .quick-actions i{font-size:26px}
     .quick-actions .wa i{color:#25D366}
     .features-wrap{position:relative;z-index:8;margin-top:-62px}
@@ -164,12 +164,12 @@
     html[dir="rtl"] .feature{border-right:0;border-left:1px solid rgba(255,255,255,.25)}
     .feature:last-child{border-right:0}
     html[dir="rtl"] .feature:last-child{border-left:0}
-    .feature i{font-size:48px;color:var(--gold);line-height:1}
+    .feature i{font-size:48px;color:var(--blue);line-height:1}
     .feature h3{font-size:18px;font-weight:900;text-transform:uppercase;margin-bottom:8px}
     .feature p{font-size:13px;line-height:1.45;color:#eee}
     section{padding:70px 0}
     .section-title{text-align:center;margin-bottom:30px}
-    .section-title .line{display:inline-block;width:32px;height:2px;background:var(--gold);vertical-align:middle;margin:0 12px}
+    .section-title .line{display:inline-block;width:32px;height:2px;background:var(--blue);vertical-align:middle;margin:0 12px}
     .section-title h2{font-size:28px;font-weight:900;text-transform:uppercase;letter-spacing:.02em}
     .section-title p{color:#555;max-width:620px;margin:8px auto 0;font-size:14px;line-height:1.6}
     .services-grid{display:grid;grid-template-columns:repeat(8,1fr);gap:14px}
@@ -180,8 +180,8 @@
     .service-card:hover{transform:translateY(-7px);box-shadow:0 17px 35px rgba(0,0,0,.14)}
     .service-card img{height:105px;width:100%;object-fit:cover}
     .service-icon{
-      width:48px;height:48px;border-radius:7px;background:#101010;color:var(--gold);display:grid;place-items:center;
-      font-size:21px;margin:-26px auto 10px;position:relative;z-index:2;border:1px solid rgba(214,161,58,.4)
+      width:48px;height:48px;border-radius:7px;background:#101010;color:var(--blue);display:grid;place-items:center;
+      font-size:21px;margin:-26px auto 10px;position:relative;z-index:2;border:1px solid rgba(74,144,226,.4)
     }
     .service-card h3{font-size:14px;font-weight:900;text-transform:uppercase;margin:0 8px 7px}
     .service-card p{font-size:12px;line-height:1.35;color:#333;padding:0 12px 15px}
@@ -194,20 +194,20 @@
       border-radius:12px;padding:18px 22px;box-shadow:var(--shadow)
     }
     html[dir="rtl"] .experience{left:auto;right:-25px}
-    .experience strong{font-size:40px;color:var(--gold);line-height:1}
+    .experience strong{font-size:40px;color:var(--blue);line-height:1}
     .about h2{font-size:38px;font-weight:900;text-transform:uppercase;line-height:1.15;margin-bottom:18px}
     .about p{color:#555;line-height:1.8;margin-bottom:14px}
     .check-list{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:22px 0}
     .check-list li{display:flex;gap:10px;align-items:flex-start;font-weight:700}
-    .check-list i{color:var(--gold);font-size:20px}
+    .check-list i{color:var(--blue);font-size:20px}
     .projects{background:#111;color:#fff}
     .projects .section-title p{color:#cfcfcf}
     .filter-bar{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:28px}
     .filter-btn{
-      padding:10px 16px;border:1px solid rgba(214,161,58,.45);border-radius:999px;font-weight:800;font-size:13px;
+      padding:10px 16px;border:1px solid rgba(74,144,226,.45);border-radius:999px;font-weight:800;font-size:13px;
       color:#fff;background:transparent;transition:.2s
     }
-    .filter-btn.active,.filter-btn:hover{background:var(--gold);color:#fff}
+    .filter-btn.active,.filter-btn:hover{background:var(--blue);color:#fff}
     .project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
     .project-card{position:relative;overflow:hidden;border-radius:13px;cursor:pointer;height:275px;background:#222}
     .project-card img{width:100%;height:100%;object-fit:cover;transition:.45s}
@@ -225,7 +225,7 @@
       border:1px solid rgba(0,0,0,.06);transition:.25s
     }
     .why-card:hover{transform:translateY(-6px)}
-    .why-card i{font-size:42px;color:var(--gold)}
+    .why-card i{font-size:42px;color:var(--blue)}
     .why-card h3{font-size:17px;font-weight:900;margin:14px 0 8px;text-transform:uppercase}
     .why-card p{font-size:13px;color:#555;line-height:1.6}
     .quote-section{
@@ -242,7 +242,7 @@
     input,select,textarea{
       width:100%;border:1px solid #ddd;border-radius:8px;padding:13px 13px;font:inherit;background:#fff;outline:none;transition:.2s
     }
-    input:focus,select:focus,textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(214,161,58,.15)}
+    input:focus,select:focus,textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(74,144,226,.15)}
     textarea{min-height:105px;resize:vertical}
     .error{font-size:12px;color:#c0392b;margin-top:5px;display:none}
     .field.invalid .error{display:block}
@@ -251,18 +251,18 @@
     .contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:25px}
     .contact-card{background:#111;color:#fff;border-radius:14px;padding:30px;box-shadow:var(--shadow)}
     .contact-row{display:flex;gap:14px;margin-bottom:20px}
-    .contact-row i{color:var(--gold);font-size:24px}
+    .contact-row i{color:var(--blue);font-size:24px}
     .contact-row h4{font-weight:900;text-transform:uppercase;font-size:14px}
     .contact-row a,.contact-row p{color:#e7e7e7;font-size:14px;margin-top:4px}
     .map iframe{width:100%;height:360px;border:0;border-radius:14px;box-shadow:var(--shadow)}
     footer{background:#050505;color:#fff;padding:45px 0 20px}
     .footer-grid{display:grid;grid-template-columns:1.3fr .75fr .75fr 1fr;gap:30px}
-    .footer-title{font-weight:900;text-transform:uppercase;margin-bottom:16px;color:var(--gold)}
+    .footer-title{font-weight:900;text-transform:uppercase;margin-bottom:16px;color:var(--blue)}
     footer a{display:block;color:#d9d9d9;margin-bottom:10px;font-size:14px;transition:.2s}
-    footer a:hover{color:var(--gold);padding-left:4px}
+    footer a:hover{color:var(--blue);padding-left:4px}
     html[dir="rtl"] footer a:hover{padding-left:0;padding-right:4px}
     .socials{display:flex;gap:12px;margin-top:18px}
-    .socials a{width:38px;height:38px;border-radius:50%;border:1px solid rgba(214,161,58,.35);display:grid;place-items:center;margin:0}
+    .socials a{width:38px;height:38px;border-radius:50%;border:1px solid rgba(74,144,226,.35);display:grid;place-items:center;margin:0}
     .copyright{border-top:1px solid rgba(255,255,255,.09);margin-top:28px;padding-top:18px;text-align:center;color:#aaa;font-size:13px}
     .modal{
       position:fixed;inset:0;background:rgba(0,0,0,.75);z-index:100;display:none;align-items:center;justify-content:center;padding:20px
@@ -286,7 +286,7 @@
     }
     .toast.show{transform:translateX(-50%) translateY(0)}
     .back-top{
-      position:fixed;right:22px;bottom:22px;width:46px;height:46px;border-radius:50%;background:var(--gold);color:#fff;
+      position:fixed;right:22px;bottom:22px;width:46px;height:46px;border-radius:50%;background:var(--blue);color:#fff;
       display:none;place-items:center;z-index:75;box-shadow:0 8px 20px rgba(0,0,0,.25)
     }
     html[dir="rtl"] .back-top{right:auto;left:22px}
@@ -342,10 +342,10 @@
   <div class="topbar">
     <div class="container-xl h-full flex items-center justify-between gap-4">
       <div class="flex items-center gap-8">
-        <a href="https://maps.google.com/?q=S%C3%A9tif%20Alg%C3%A9rie" target="_blank" class="flex items-center gap-2"><i class="bi bi-geo-alt-fill icon-gold"></i><span data-i18n="location">Sétif, Algérie</span></a>
-        <a href="tel:+213665138839" class="flex items-center gap-2"><i class="bi bi-telephone-fill icon-gold"></i><span>+213 665 138 839</span></a>
-        <a href="mailto:contact@neofront.dz" class="flex items-center gap-2"><i class="bi bi-envelope icon-gold"></i><span>contact@neofront.dz</span></a>
-        <span class="flex items-center gap-2"><i class="bi bi-clock icon-gold"></i><span data-i18n="hours">Lun - Sam : 08h00 - 18h00</span></span>
+        <a href="https://maps.google.com/?q=S%C3%A9tif%20Alg%C3%A9rie" target="_blank" class="flex items-center gap-2"><i class="bi bi-geo-alt-fill icon-blue"></i><span data-i18n="location">Sétif, Algérie</span></a>
+        <a href="tel:+213665138839" class="flex items-center gap-2"><i class="bi bi-telephone-fill icon-blue"></i><span>+213 665 138 839</span></a>
+        <a href="mailto:contact@neofront.dz" class="flex items-center gap-2"><i class="bi bi-envelope icon-blue"></i><span>contact@neofront.dz</span></a>
+        <span class="flex items-center gap-2"><i class="bi bi-clock icon-blue"></i><span data-i18n="hours">Lun - Sam : 08h00 - 18h00</span></span>
       </div>
       <div class="flex items-center gap-5 text-lg">
         <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
@@ -360,9 +360,9 @@
     <div class="container-xl h-full flex items-center justify-between gap-6">
       <a href="#home" class="brand-logo flex items-center gap-3 shrink-0" aria-label="NEO FRONT Accueil">
         <svg viewBox="0 0 80 80" fill="none" aria-hidden="true">
-          <path d="M13 67V12l21 16v39h-9V33L13 25v42Z" fill="#D6A13A"/>
+          <path d="M13 67V12l21 16v39h-9V33L13 25v42Z" fill="#4A90E2"/>
           <path d="M34 67V10l34 15-10 6-14-6v13h20l-9 8H44v21H34Z" fill="white"/>
-          <path d="M21 14l13 10v10L21 24V14Z" fill="#F0C76A"/>
+          <path d="M21 14l13 10v10L21 24V14Z" fill="#7FB8E6"/>
           <path d="M44 11v12l-10-5v-8l10 1Z" fill="#E7E7E7"/>
         </svg>
         <div>
@@ -389,7 +389,7 @@
       </nav>
 
       <div class="flex items-center gap-5">
-        <button class="btn btn-gold desktop-quote open-quote" data-i18n="quote_btn">Demander un devis</button>
+        <button class="btn btn-blue desktop-quote open-quote" data-i18n="quote_btn">Demander un devis</button>
         <div class="lang-box flex items-center">
           <button id="langBtn" class="font-bold flex items-center gap-1">FR <i class="bi bi-chevron-down text-xs"></i></button>
           <div id="langMenu" class="lang-menu">
@@ -431,14 +431,14 @@
             <h1 data-i18n="hero_title">VIBE OUTSIDE</h1>
             <p data-i18n="hero_text">Revêtement général, décoration, fourniture & pose</p>
             <div class="hero-actions flex gap-4">
-              <button class="btn btn-gold open-quote"><i class="bi bi-file-earmark-text"></i><span data-i18n="quote_btn">Demander un devis</span></button>
+              <button class="btn btn-blue open-quote"><i class="bi bi-file-earmark-text"></i><span data-i18n="quote_btn">Demander un devis</span></button>
               <a href="#projects" class="btn btn-outline"><i class="bi bi-play-circle"></i><span data-i18n="see_projects">Voir nos réalisations</span></a>
             </div>
           </div>
         </div>
         <div class="hero-logo-card">
           <div class="brand-logo flex items-center gap-4">
-            <svg viewBox="0 0 80 80" fill="none"><path d="M13 67V12l21 16v39h-9V33L13 25v42Z" fill="#D6A13A"/><path d="M34 67V10l34 15-10 6-14-6v13h20l-9 8H44v21H34Z" fill="white"/></svg>
+            <svg viewBox="0 0 80 80" fill="none"><path d="M13 67V12l21 16v39h-9V33L13 25v42Z" fill="#4A90E2"/><path d="M34 67V10l34 15-10 6-14-6v13h20l-9 8H44v21H34Z" fill="white"/></svg>
             <div><div class="brand-title"><span>NEO</span> <span>FRONT</span></div><div class="brand-sub">Design Inside Vibe Outside</div></div>
           </div>
         </div>
@@ -452,7 +452,7 @@
             <h1 data-i18n="hero2_title">INTÉRIEUR UNIQUE</h1>
             <p data-i18n="hero2_text">Des espaces élégants, fonctionnels et réalisés avec précision.</p>
             <div class="hero-actions flex gap-4">
-              <button class="btn btn-gold open-quote"><i class="bi bi-file-earmark-text"></i><span data-i18n="quote_btn">Demander un devis</span></button>
+              <button class="btn btn-blue open-quote"><i class="bi bi-file-earmark-text"></i><span data-i18n="quote_btn">Demander un devis</span></button>
               <a href="#services" class="btn btn-outline"><i class="bi bi-grid"></i><span data-i18n="discover_services">Découvrir nos services</span></a>
             </div>
           </div>
@@ -467,7 +467,7 @@
             <h1 data-i18n="hero3_title">FINITION PRO</h1>
             <p data-i18n="hero3_text">Menuiserie aluminium/PVC, façades ventilées et faux plafonds.</p>
             <div class="hero-actions flex gap-4">
-              <button class="btn btn-gold open-quote"><i class="bi bi-file-earmark-text"></i><span data-i18n="quote_btn">Demander un devis</span></button>
+              <button class="btn btn-blue open-quote"><i class="bi bi-file-earmark-text"></i><span data-i18n="quote_btn">Demander un devis</span></button>
               <a href="#contact" class="btn btn-outline"><i class="bi bi-geo-alt"></i><span data-i18n="contact_us">Nous contacter</span></a>
             </div>
           </div>
@@ -510,7 +510,7 @@
     <section id="services">
       <div class="container-xl">
         <div class="section-title">
-          <h2><span class="line"></span><span data-i18n="services_title">Nos</span> <span class="gold" data-i18n="services_title_gold">Services</span></h2>
+          <h2><span class="line"></span><span data-i18n="services_title">Nos</span> <span class="blue" data-i18n="services_title_gold">Services</span></h2>
           <p data-i18n="services_sub">Nous vous proposons des solutions complètes et sur mesure pour tous vos projets intérieurs et extérieurs.</p>
         </div>
         <div class="services-grid">
@@ -561,7 +561,7 @@
         </div>
         <div>
           <div class="section-title text-left !mb-4">
-            <h2 class="!text-left"><span data-i18n="about_title">À propos de</span> <span class="gold">NEO FRONT</span></h2>
+            <h2 class="!text-left"><span data-i18n="about_title">À propos de</span> <span class="blue">NEO FRONT</span></h2>
           </div>
           <p data-i18n="about_p1">NEO FRONT est une entreprise basée à Sétif spécialisée dans le revêtement de façade, la décoration intérieure, la menuiserie aluminium/PVC, la fourniture et la pose professionnelle.</p>
           <p data-i18n="about_p2">Notre mission est de transformer les espaces avec une approche moderne : design soigné à l’intérieur, présence forte à l’extérieur, matériaux fiables et finitions impeccables.</p>
@@ -571,7 +571,7 @@
             <li><i class="bi bi-check-circle-fill"></i><span data-i18n="check3">Respect des délais de chantier</span></li>
             <li><i class="bi bi-check-circle-fill"></i><span data-i18n="check4">Installation par équipe qualifiée</span></li>
           </ul>
-          <button class="btn btn-gold open-quote"><i class="bi bi-calculator"></i><span data-i18n="free_quote">Devis gratuit</span></button>
+          <button class="btn btn-blue open-quote"><i class="bi bi-calculator"></i><span data-i18n="free_quote">Devis gratuit</span></button>
         </div>
       </div>
     </section>
@@ -579,7 +579,7 @@
     <section id="projects" class="projects">
       <div class="container-xl">
         <div class="section-title">
-          <h2><span class="line"></span><span data-i18n="projects_title">Nos</span> <span class="gold" data-i18n="projects_title_gold">Réalisations</span></h2>
+          <h2><span class="line"></span><span data-i18n="projects_title">Nos</span> <span class="blue" data-i18n="projects_title_gold">Réalisations</span></h2>
           <p data-i18n="projects_sub">Découvrez une sélection de projets de façades, menuiseries et aménagements réalisés avec précision.</p>
         </div>
         <div class="filter-bar">
@@ -620,7 +620,7 @@
     <section id="why">
       <div class="container-xl">
         <div class="section-title">
-          <h2><span class="line"></span><span data-i18n="why_title">Pourquoi</span> <span class="gold" data-i18n="why_title_gold">Nous choisir</span></h2>
+          <h2><span class="line"></span><span data-i18n="why_title">Pourquoi</span> <span class="blue" data-i18n="why_title_gold">Nous choisir</span></h2>
           <p data-i18n="why_sub">Un partenaire fiable pour vos projets, de la conception à la livraison.</p>
         </div>
         <div class="why-grid">
@@ -649,7 +649,7 @@
             <div class="field"><select name="service" required><option value="" data-i18n="select_service">Choisir un service</option><option>Alucobond</option><option>Mur rideau</option><option>Menuiserie aluminium</option><option>Menuiserie PVC</option><option>Faux plafond</option></select><div class="error" data-i18n="err_required">Champ obligatoire</div></div>
             <div class="field"><input name="city" placeholder="Ville" data-placeholder-fr="Ville" data-placeholder-en="City" data-placeholder-ar="المدينة" required><div class="error" data-i18n="err_required">Champ obligatoire</div></div>
             <div class="field full"><textarea name="message" placeholder="Décrivez votre projet..." data-placeholder-fr="Décrivez votre projet..." data-placeholder-en="Describe your project..." data-placeholder-ar="صف مشروعك..." required></textarea><div class="error" data-i18n="err_required">Champ obligatoire</div></div>
-            <div class="field full"><button class="btn btn-gold w-full" type="submit"><i class="bi bi-send"></i><span data-i18n="send_request">Envoyer la demande</span></button></div>
+            <div class="field full"><button class="btn btn-blue w-full" type="submit"><i class="bi bi-send"></i><span data-i18n="send_request">Envoyer la demande</span></button></div>
           </div>
         </form>
       </div>
@@ -658,7 +658,7 @@
     <section id="contact" class="map-contact">
       <div class="container-xl">
         <div class="section-title">
-          <h2><span class="line"></span><span data-i18n="contact_title">Contactez</span> <span class="gold" data-i18n="contact_title_gold">NEO FRONT</span></h2>
+          <h2><span class="line"></span><span data-i18n="contact_title">Contactez</span> <span class="blue" data-i18n="contact_title_gold">NEO FRONT</span></h2>
           <p data-i18n="contact_sub">Nous sommes à votre écoute pour répondre à vos questions et planifier une visite.</p>
         </div>
         <div class="contact-grid">
@@ -667,7 +667,7 @@
             <div class="contact-row"><i class="bi bi-telephone-fill"></i><div><h4 data-i18n="phone">Téléphone</h4><a href="tel:+213665138839">+213 665 138 839</a></div></div>
             <div class="contact-row"><i class="bi bi-envelope-fill"></i><div><h4>Email</h4><a href="mailto:contact@neofront.dz">contact@neofront.dz</a></div></div>
             <div class="contact-row"><i class="bi bi-clock-fill"></i><div><h4 data-i18n="worktime">Horaires</h4><p data-i18n="hours">Lun - Sam : 08h00 - 18h00</p></div></div>
-            <button class="btn btn-gold open-quote w-full mt-2"><i class="bi bi-file-earmark-text"></i><span data-i18n="quote_btn">Demander un devis</span></button>
+            <button class="btn btn-blue open-quote w-full mt-2"><i class="bi bi-file-earmark-text"></i><span data-i18n="quote_btn">Demander un devis</span></button>
           </div>
           <div class="map">
             <iframe title="Carte Google Sétif Algérie" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=S%C3%A9tif%2C%20Alg%C3%A9rie&output=embed"></iframe>
@@ -682,7 +682,7 @@
       <div class="footer-grid">
         <div>
           <a href="#home" class="brand-logo flex items-center gap-3 mb-4">
-            <svg viewBox="0 0 80 80" fill="none"><path d="M13 67V12l21 16v39h-9V33L13 25v42Z" fill="#D6A13A"/><path d="M34 67V10l34 15-10 6-14-6v13h20l-9 8H44v21H34Z" fill="white"/></svg>
+            <svg viewBox="0 0 80 80" fill="none"><path d="M13 67V12l21 16v39h-9V33L13 25v42Z" fill="#4A90E2"/><path d="M34 67V10l34 15-10 6-14-6v13h20l-9 8H44v21H34Z" fill="white"/></svg>
             <div><div class="brand-title"><span>NEO</span> <span>FRONT</span></div><div class="brand-sub">Design Inside Vibe Outside</div></div>
           </a>
           <p class="text-gray-300 leading-7 text-sm" data-i18n="footer_about">Revêtement général, décoration, fourniture et pose professionnelle à Sétif, Algérie.</p>
@@ -700,9 +700,9 @@
         </div>
         <div>
           <h4 class="footer-title" data-i18n="contact_title_gold">NEO FRONT</h4>
-          <a href="tel:+213665138839"><i class="bi bi-telephone icon-gold"></i> +213 665 138 839</a>
-          <a href="mailto:contact@neofront.dz"><i class="bi bi-envelope icon-gold"></i> contact@neofront.dz</a>
-          <a href="https://maps.google.com/?q=S%C3%A9tif%20Alg%C3%A9rie" target="_blank"><i class="bi bi-geo-alt icon-gold"></i> Sétif, Algérie</a>
+          <a href="tel:+213665138839"><i class="bi bi-telephone icon-blue"></i> +213 665 138 839</a>
+          <a href="mailto:contact@neofront.dz"><i class="bi bi-envelope icon-blue"></i> contact@neofront.dz</a>
+          <a href="https://maps.google.com/?q=S%C3%A9tif%20Alg%C3%A9rie" target="_blank"><i class="bi bi-geo-alt icon-blue"></i> Sétif, Algérie</a>
         </div>
       </div>
       <div class="copyright">© <span id="year"></span> NEO FRONT. <span data-i18n="rights">Tous droits réservés.</span></div>
@@ -722,7 +722,7 @@
             <div class="field"><input name="email" type="email" placeholder="Email" data-placeholder-fr="Email" data-placeholder-en="Email" data-placeholder-ar="البريد الإلكتروني"><div class="error" data-i18n="err_email">Email invalide</div></div>
             <div class="field"><select name="service" required><option value="" data-i18n="select_service">Choisir un service</option><option>Alucobond</option><option>Mur rideau</option><option>Menuiserie aluminium</option><option>Menuiserie PVC</option><option>Faux plafond</option></select><div class="error" data-i18n="err_required">Champ obligatoire</div></div>
             <div class="field full"><textarea name="message" placeholder="Décrivez votre projet..." data-placeholder-fr="Décrivez votre projet..." data-placeholder-en="Describe your project..." data-placeholder-ar="صف مشروعك..." required></textarea><div class="error" data-i18n="err_required">Champ obligatoire</div></div>
-            <div class="field full"><button class="btn btn-gold w-full" type="submit"><i class="bi bi-whatsapp"></i><span data-i18n="send_whatsapp">Envoyer via WhatsApp</span></button></div>
+            <div class="field full"><button class="btn btn-blue w-full" type="submit"><i class="bi bi-whatsapp"></i><span data-i18n="send_whatsapp">Envoyer via WhatsApp</span></button></div>
           </div>
         </form>
       </div>
@@ -735,15 +735,15 @@
       <img class="project-modal-img" id="projectModalImg" alt="Projet NEO FRONT">
       <div class="modal-body">
         <h2 id="projectModalTitle" class="text-3xl font-black mb-2"></h2>
-        <p class="text-gray-600 mb-4"><i class="bi bi-geo-alt gold"></i> <span id="projectModalLocation"></span></p>
+        <p class="text-gray-600 mb-4"><i class="bi bi-geo-alt blue"></i> <span id="projectModalLocation"></span></p>
         <p class="text-gray-700 leading-7" data-i18n="project_modal_desc">Projet réalisé avec une attention particulière aux matériaux, à la qualité de pose et à l’harmonie visuelle.</p>
-        <button class="btn btn-gold mt-5 open-quote" data-close="projectModal"><i class="bi bi-calculator"></i><span data-i18n="similar_quote">Demander un projet similaire</span></button>
+        <button class="btn btn-blue mt-5 open-quote" data-close="projectModal"><i class="bi bi-calculator"></i><span data-i18n="similar_quote">Demander un projet similaire</span></button>
       </div>
     </div>
   </div>
 
   <button class="back-top" id="backTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
-  <div class="toast" id="toast"><i class="bi bi-check-circle-fill gold"></i><span id="toastText">Demande envoyée avec succès.</span></div>
+  <div class="toast" id="toast"><i class="bi bi-check-circle-fill blue"></i><span id="toastText">Demande envoyée avec succès.</span></div>
 
   <script>
     const translations = {
@@ -861,7 +861,7 @@
     $("#year").textContent = new Date().getFullYear();
 
     $("#langBtn").addEventListener("click",()=>$("#langMenu").classList.toggle("open"));
-    $$("#langMenu button").forEach(btn=>btn.addEventListener("click",()=>{
+    $$ ("#langMenu button").forEach(btn=>btn.addEventListener("click",()=>{
       applyLang(btn.dataset.lang);
       $("#langMenu").classList.remove("open");
     }));
@@ -871,7 +871,7 @@
       e.currentTarget.closest(".dropdown").classList.toggle("open");
     });
     document.addEventListener("click",(e)=>{
-      if(!e.target.closest(".dropdown")) $$(".dropdown").forEach(d=>d.classList.remove("open"));
+      if(!e.target.closest(".dropdown")) $$ (".dropdown").forEach(d=>d.classList.remove("open"));
       if(!e.target.closest(".lang-box")) $("#langMenu").classList.remove("open");
     });
 
@@ -880,12 +880,12 @@
       $("#menuToggle i").className = $("#mobilePanel").classList.contains("open") ? "bi bi-x-lg" : "bi bi-list";
     });
     $("#mobileServices").addEventListener("click",()=>$("#mobileSub").classList.toggle("open"));
-    $$("#mobilePanel a").forEach(a=>a.addEventListener("click",()=>{
+    $$ ("#mobilePanel a").forEach(a=>a.addEventListener("click",()=>{
       $("#mobilePanel").classList.remove("open");
       $("#menuToggle i").className = "bi bi-list";
     }));
 
-    const slides = $$(".slide");
+    const slides = $$ (".slide");
     const dotsWrap = $("#heroDots");
     let slideIndex = 0, slideTimer;
     slides.forEach((_,i)=>{
@@ -908,7 +908,7 @@
     $("#nextSlide").addEventListener("click",()=>goSlide(slideIndex+1));
     slideTimer = setInterval(()=>goSlide(slideIndex+1),6000);
 
-    const navLinks = $$(".nav-link[href]");
+    const navLinks = $$ (".nav-link[href]");
     const sections = navLinks.map(a=>$(a.getAttribute("href"))).filter(Boolean);
     window.addEventListener("scroll",()=>{
       const y = window.scrollY + 160;
@@ -921,19 +921,19 @@
     });
     $("#backTop").addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
 
-    $$(".filter-btn").forEach(btn=>{
+    $$ (".filter-btn").forEach(btn=>{
       btn.addEventListener("click",()=>{
-        $$(".filter-btn").forEach(b=>b.classList.remove("active"));
+        $$ (".filter-btn").forEach(b=>b.classList.remove("active"));
         btn.classList.add("active");
         const filter = btn.dataset.filter;
-        $$(".project-card").forEach(card=>{
+        $$ (".project-card").forEach(card=>{
           const show = filter === "all" || card.dataset.category === filter;
           card.style.display = show ? "" : "none";
         });
       });
     });
 
-    $$(".project-card").forEach(card=>{
+    $$ (".project-card").forEach(card=>{
       card.addEventListener("click",()=>{
         $("#projectModalImg").src = card.dataset.img;
         $("#projectModalTitle").textContent = card.dataset.title;
@@ -944,14 +944,14 @@
 
     function openModal(id){ $("#"+id).classList.add("open"); document.body.style.overflow="hidden"; }
     function closeModal(id){ $("#"+id).classList.remove("open"); document.body.style.overflow=""; }
-    $$(".open-quote").forEach(btn=>btn.addEventListener("click",(e)=>{
+    $$ (".open-quote").forEach(btn=>btn.addEventListener("click",(e)=>{
       e.preventDefault();
       if(btn.dataset.close) closeModal(btn.dataset.close);
       openModal("quoteModal");
     }));
-    $$("[data-close]").forEach(btn=>btn.addEventListener("click",()=>closeModal(btn.dataset.close)));
-    $$(".modal").forEach(m=>m.addEventListener("click",(e)=>{ if(e.target===m) closeModal(m.id); }));
-    document.addEventListener("keydown",(e)=>{ if(e.key==="Escape") $$(".modal.open").forEach(m=>closeModal(m.id)); });
+    $$ ("[data-close]").forEach(btn=>btn.addEventListener("click",()=>closeModal(btn.dataset.close)));
+    $$ (".modal").forEach(m=>m.addEventListener("click",(e)=>{ if(e.target===m) closeModal(m.id); }));
+    document.addEventListener("keydown",(e)=>{ if(e.key==="Escape") $$ (".modal.open").forEach(m=>closeModal(m.id)); });
 
     function showToast(text){
       $("#toastText").textContent = text || translations[currentLang].toast;
@@ -959,12 +959,12 @@
       setTimeout(()=>$("#toast").classList.remove("show"),3500);
     }
 
-    $$(".quote-form").forEach(form=>{
+    $$ (".quote-form").forEach(form=>{
       form.addEventListener("submit",(e)=>{
         e.preventDefault();
         let valid = true;
-        $$(".field", form).forEach(f=>f.classList.remove("invalid"));
-        $$("input,select,textarea", form).forEach(input=>{
+        $$ (".field", form).forEach(f=>f.classList.remove("invalid"));
+        $$ ("input,select,textarea", form).forEach(input=>{
           if(!input.checkValidity()){
             input.closest(".field").classList.add("invalid");
             valid = false;
@@ -985,7 +985,7 @@
       });
     });
 
-    $$("input,select,textarea").forEach(el=>{
+    $$ ("input,select,textarea").forEach(el=>{
       el.addEventListener("input",()=>el.closest(".field")?.classList.remove("invalid"));
       el.addEventListener("change",()=>el.closest(".field")?.classList.remove("invalid"));
     });
